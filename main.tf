@@ -4,7 +4,7 @@ provider "aws" {
 
 module "aws_iam_user_test" {
   source = "./modules/iam_user"
-  user_name = "Elinor"
+  user_name = "Elinor1"
 }
 
 module "ec2" {
@@ -15,5 +15,12 @@ module "ec2" {
 
 module "iam_user" {
   source = "./modules/iam_user"
-  user_name = "Moti"
+  user_name = "Moti1"
+}
+
+
+module "aws_s3_bucket" {
+    source = "./modules/s3"
+    bucket_name = "s3newbucketfibibanktea1"
+  
 }
