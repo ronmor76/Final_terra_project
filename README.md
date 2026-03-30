@@ -7,7 +7,7 @@ This project uses Terraform to deploy AWS infrastructure using a modular approac
 The main.tf file orchestrates the following three modules:
 IAM Module: Manages Identity and Access Management, including the creation of Users for secure access control.
 S3 Module: Creates an S3 Bucket for file storage .
-EC2 Module: Deploys a virtual server within the created VPC.
+EC2 Module: Deploys a virtual server within your default VPC.
 
  Getting Started
 Prerequisites
